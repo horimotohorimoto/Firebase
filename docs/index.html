@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -52,12 +54,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/docs.loader.js";
+      var loaderUrl = buildUrl + "/build.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/docs.data",
-        frameworkUrl: buildUrl + "/docs.framework.js",
-        codeUrl: buildUrl + "/docs.wasm",
+        dataUrl: buildUrl + "/build.data",
+        frameworkUrl: buildUrl + "/build.framework.js",
+        codeUrl: buildUrl + "/build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "firebase",
@@ -123,7 +125,5 @@
       document.body.appendChild(script);
 
     </script>
-    <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js"></script> 
-    <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js"></script>
   </body>
 </html>
